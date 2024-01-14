@@ -1,0 +1,95 @@
+[
+  {
+    "id": 1,
+    "name" : "Deluxe City View Room",
+    "price" : 350,
+    "image" : "Images/room-city-view.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Deluxe Sea View Room",
+    "price": 480,
+    "image": "Images/room-sea-view.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Deluxe Family Room",
+    "price": 550,
+    "image": "Images/rooml-family-room.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Mount Climbing (Solo Package)",
+    "price": 249,
+    "image": "Images/mountsunrise.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Mount Climbing (Couple Package)",
+    "price": 499,
+    "image": "Images/mountsunrise.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Mount Climbing (Family Package)",
+    "price": 899,
+    "image": "Images/mountsunrise.jpg"
+  },
+  {
+    "id": 7,
+    "name": "FireFires Cruise (Solo Package)",
+    "price": 300,
+    "image": "Images/fireflyfly.jpg"
+  },
+  {
+    "id": 8,
+    "name": "FireFires Cruise (Couple Package)",
+    "price": 500,
+    "image": "Images/fireflyfly.jpg"
+  },
+  {
+    "id": 9,
+    "name": "FireFires Cruise (Family Package)",
+    "price": 800,
+    "image": "Images/fireflyfly.jpg"
+  },
+  {
+    "id": 10,
+    "name": "ATV Riding (Solo Package)",
+    "price": 159,
+    "image": "Images/ATV Riding.jpg"
+  },
+  {
+    "id": 11,
+    "name": "ATV Riding (Couple Package)",
+    "price": 399,
+    "image": "Images/ATV Riding.jpg"
+  },
+  {
+    "id": 12,
+    "name": "ATV Riding (Family Package)",
+    "price": 700,
+    "image": "Images/ATV Riding.jpg"
+  },
+
+  {
+    "id": 13,
+    "name": "Water Sport",
+    "price": 160,
+    "image": "Images/experience-1.1.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Reserve Park",
+    "price": 99,
+    "image": "Images/experience-2.1jpg.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Hotel Facilities",
+    "price": 39,
+    "image": "Images/experience-3.2.jpeg"
+  }
+
+  
+]
