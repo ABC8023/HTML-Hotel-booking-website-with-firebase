@@ -1,0 +1,791 @@
+.room{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: url(../Images/pool.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-attachment: fixed;
+}
+.room h1{
+    font-size: 74px;
+    line-height: 1.2;
+    color: var(--bg-color);
+    font-family: 'Paytone One', sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 0px;
+    text-shadow: 5px 5px 10px black;
+}
+
+.room p{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 50px;
+}
+
+.room-text {
+    margin-left: 0px;
+    
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 18px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+
+  .swiper {
+    position: relative;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .Facilities{
+    display:block;
+    justify-content: center;
+    background: linear-gradient(to bottom, #006699 0%, #33cccc 100%);
+    max-width: 2000px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    box-shadow: 0px 18px 25px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+.Facilities .text h2{
+    text-align: left;
+    font-size: var(--h2-font);
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.Facilities .text p{
+    text-align: left;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.mySwiper {
+    margin: 0;
+}
+
+
+
+
+
+#ourroom {
+    font-size: var(--h2-font);
+    line-height: 1.2;
+    text-align: center;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.rooms {
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 80px;
+    padding-top: 30px;
+}
+
+.rooms text {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-top: none;
+    padding: 30px;
+}
+
+
+
+/* Style to arrange items horizontally */
+.contentmtop {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: stretch; 
+    flex-wrap: wrap; 
+    margin: 0;
+
+}
+
+
+
+
+
+
+/* Style for each item */
+.item {
+    flex: 0 1 calc(33.33% - 20px); 
+    margin: 10px;
+    box-sizing: border-box; 
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s ease;
+    box-shadow: 0 16px 25px rgba(0, 0, 0, 0.3);
+}
+
+.item:hover::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #da722c;
+    transition: top 0.3s ease; /* Adjust the duration and easing as needed */
+}
+
+
+.item:hover .text ,
+.item:hover .text p,
+.item:hover .price {
+
+    color: #da722c;
+    top: 0;
+    transition: 0.2s;
+    height: 180%;
+
+}
+
+.container:hover .item:not(:hover) .text,
+.container:hover .item:not(:hover) .text p,
+.container:hover .item:not(:hover) .price {
+    transition: 3s ease; /* Adjust the duration to match the hover transition */
+    color: black; /* Change text color back to black when not hovering */
+}
+
+.item .text,
+.item .text p,
+.item .price {
+    transition: 3s ease; /* Adjust the duration to your preference */
+}
+
+
+
+.item .text p {
+    text-align: left;
+    line-height: 23px;
+}
+
+
+.container:hover .item:not(:hover) .text {
+    color: black; /* Change text color back to black when not hovering */
+
+  }
+
+.item ::before{
+    top: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#da722c;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .8s ease;
+    z-index: 1;
+}
+
+  .item:hover .overlay {
+    height: 160%;
+    border-radius: 30% 30% 0 0;
+  }
+
+  
+
+  .layer {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: none;
+  }
+
+.layer,
+.layer2 {
+    color: white !important;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: none;
+}
+
+.layer2 {
+    top: 95%;
+    color: white;
+}
+
+
+.layer a:hover,
+.layer2 a:hover {
+    text-decoration: underline; /* Add underline on hover if desired */
+}
+
+
+
+
+.text {
+    position: relative;
+    z-index: 2;
+    transition: top 0.3s ease; 
+    padding: 15px;
+}
+
+.text h2{
+    font-size: 30px;
+    line-height: 20px;
+}
+.item :hover .overlay{
+    z-index: 1;
+}
+
+
+
+
+.images img {
+    display: block;
+    width: 493px;
+    height: 32vh;
+    z-index: 1;
+    position: relative;
+}
+
+.rate_flex {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 15px;
+    padding-right: 45px;
+
+}
+
+
+.rate_flex li {
+    list-style: none; /* Remove default list styling */
+    margin-right: 10px;
+}
+
+.rate_flex i {
+    font-size: 35px;
+    line-height: 32px;
+}
+.rate_flex ul{
+    width: 100px;
+}
+.rate_flex .rate_flex1{
+    font-size: 15px;
+    position: absolute;
+    float: right;
+    top: 226px;
+    left: 70px;
+}
+
+.rate_flex .rate_flex2{
+    font-size: 15px;
+    position: absolute;
+    float: right;
+    top: 286px;
+    left: 70px;
+}
+.rate_flex .rate_flex3{
+    font-size: 15px;
+    line-height: 5px;
+    position: absolute;
+    float: right;
+    top: 226px;
+    left: 216px;
+}
+.rate_flex .rate_flex4{
+    font-size: 15px;
+    line-height: 5px;
+    position: absolute;
+    float: right;
+    top: 280px;
+    left: 216px;
+}
+.rate_flex .rate_flex5{
+    font-size: 15px;
+    line-height: 5px;
+    position: absolute;
+    float: right;
+    top: 226px;
+    left: 70px;
+}
+.rate_flex .rate_flex6{
+    font-size: 15px;
+    line-height: 5px;
+    position: absolute;
+    float: right;
+    top: 286px;
+    left: 70px;
+}
+.rate_flex .rate_flex7{
+    font-size: 15px;
+    line-height: 5px;
+    position: absolute;
+    float: right;
+    top: 226px;
+    left: 216px;
+}
+.rate_flex .rate_flex8{
+    font-size: 15px;
+    line-height: 5px;
+    position: absolute;
+    float: right;
+    top: 280px;
+    left: 216px;
+}
+.rate_flex .rate_flex9{
+    font-size: 15px;
+    line-height: 5px;
+    position: absolute;
+    float: right;
+    top: 226px;
+    left: 70px;
+}
+.rate_flex .rate_flex10{
+    font-size: 15px;
+    line-height: 5px;
+    position: absolute;
+    float: right;
+    top: 286px;
+    left: 70px;
+}
+.rate_flex .rate_flex11{
+    font-size: 15px;
+    line-height: 5px;
+    position: absolute;
+    float: right;
+    top: 226px;
+    left: 216px;
+}
+.rate_flex .rate_flex12{
+    font-size: 15px;
+    line-height: 5px;
+    position: absolute;
+    float: right;
+    top: 280px;
+    left: 216px;
+}
+
+.price {
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #da722c;
+    border-radius:  7px 7px 0 0;
+    justify-content: center;
+    justify-items: center;
+}
+
+.rate_flex ul li {
+    padding-bottom: 20px;
+
+  }
+
+.price h2 {
+    color: aliceblue;
+}
+
+.icon_container {
+    display: flex;
+}
+.icon_container p{
+    float: right;
+}
+
+.layer h2 {
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.layer :hover{
+    text-decoration: underline;
+}
+
+
+
+.heading h2{
+    text-align: left;
+    font-size: var(--h2-font);
+    margin-bottom: 10px;
+
+}
+  
+.heading {
+    padding: 25px;
+}
+
+.heading p{
+    text-align: left;
+    color: #a75a26;
+}
+
+
+
+
+
+.joinUs {
+    display: flex;
+    justify-content: center;
+    height: 730px;
+    padding: 60px;
+    max-width: 157vh;
+  }
+
+  .joinUs section{
+    padding-left: 70px;
+    padding-right: 20px;
+  }
+
+  .joinUs .swiper {
+    width: 360px;
+    height: 500px;
+    margin-left: 200px;
+    margin-top: 20px; 
+  }
+
+
+  .joinUs .mySwiper2 .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+
+  .joinUs .mySwiper2 .swiper-slide img{
+    height: 100%;
+  }
+
+
+
+
+.Subscribe h2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 120%;
+    color: #023047;
+    margin-top: 58px;
+
+}
+
+.Subscribe p{
+  padding-bottom: 40px;
+  height: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 200%;
+  color: #023047;
+  margin: 18px;
+}
+
+.Subcribe {
+    padding: 100px;
+    margin-left: 20px;
+}
+
+
+.Subcribe .btn-light {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+.btn-light{
+    margin-top: 45px;
+}
+.Subcribe .btn-light:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.Facilities-text {
+  position: absolute;
+  transform: translate(-50% ,-50%);
+  left: 50%;
+  margin-left: -185px;
+  top: 9%;
+  padding: 8px 16px;
+  background-color: #cccccc;
+  border-radius: 10px;
+  pointer-events: none;
+  box-shadow: 4px 4px 50px -4px rgba(0, 0 , 0, 0.8);
+  opacity: 0.6;
+  transition: all 400ms ease;
+}
+
+
+@media only screen and (max-width: 480px){
+
+    .room-text{
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .room img {
+        margin-bottom: 20px;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .rooms {
+        padding: 10px;
+    }
+
+    .contentmtop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-right: 25px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        gap: 30px;
+
+    }
+    
+    .item {
+        width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 18px 25px rgba(0, 0, 0, 0.2);
+      }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .joinUs {
+        flex-direction: column;
+        align-items: center;
+
+      }
+    
+    .Subscribe h2{
+        margin-top: 20px;
+        font-size: 50px;
+        line-height: 100%;
+    }
+
+
+    .joinUs .swiper {
+        margin-left: 100px;
+        margin-top: 20px;
+        width: 250px;
+        height: 350px;
+      }
+    
+    .joinUs {
+        padding-left: 20px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .Subscribe{
+        margin-top: 50px;
+    }
+    .rate_flex{
+        padding-right: 100px;
+    }
+    .rate_flex .rate_flex1{
+        font-size: 15px;
+        position: absolute;
+        float: right;
+        top: 186px;
+        left: 94px;
+    }
+    
+    .rate_flex .rate_flex2{
+        font-size: 15px;
+        position: absolute;
+        float: right;
+        top: 248px;
+        left: 94px;
+    }
+    .rate_flex .rate_flex3{
+        font-size: 15px;
+        position: absolute;
+        float: right;
+        top: 185px;
+        left: 310px;
+    }
+    .rate_flex .rate_flex4{
+        font-size: 15px;
+        position: absolute;
+        float: right;
+        top: 248px;
+        left: 310px;
+    }
+    .rate_flex .rate_flex5{
+        font-size: 15px;
+        position: absolute;
+        float: right;
+        top: 164px;
+        left: 94px;
+    }
+    .rate_flex .rate_flex6{
+        font-size: 15px;
+        position: absolute;
+        float: right;
+        top: 225px;
+        left: 94px;
+    }
+    .rate_flex .rate_flex7{
+        font-size: 15px;
+        position: absolute;
+        float: right;
+        top: 164px;
+        left: 310px;
+    }
+    .rate_flex .rate_flex8{
+        font-size: 15px;
+        position: absolute;
+        float: right;
+        top: 225px;
+        left: 310px;
+    }
+    .rate_flex .rate_flex9{
+        font-size: 15px;
+        position: absolute;
+        float: right;
+        top: 162px;
+        left: 94px;
+    }
+    .rate_flex .rate_flex10{
+        font-size: 15px;
+        position: absolute;
+        float: right;
+        top: 223px;
+        left: 94px;
+    }
+    .rate_flex .rate_flex11{
+        font-size: 15px;
+        position: absolute;
+        float: right;
+        top: 162px;
+        left: 310px;
+    }
+    .rate_flex .rate_flex12{
+        font-size: 15px;
+        position: absolute;
+        float: right;
+        top: 223px;
+        left: 310px;
+    }
+    .Facilities-text {
+        margin-left: -145px;
+    }
+
+}
+
+
+
+
+@media only screen and (width  = 1024px){
+    .contentmtop {
+        width: 960px;
+        margin: 16px -67px;
+    }
+
+    .text h2{
+        line-height: 30px;
+    }
+
+    .Facilities-text {
+        margin-left: -90px;
+    }
+    
+    .joinUs .swiper-wrapper {
+        margin-left: -160px;
+
+    }
+
+    .Subcribe {
+        margin-left: -50px;
+    }
+
+}
+

@@ -1,0 +1,320 @@
+.roombook1{
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    background: url(../Images/room-city-view.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.roombook2{
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    background: url(../Images/room-sea-view.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.roombook3{
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    background: url(../Images/rooml-family-room.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.roombook-text h1{
+    font-size: 50px;
+    line-height: 1.2;
+    font-family: 'Paytone One', sans-serif;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+.roombook-text p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 50px;
+}
+.roombook-text {
+    margin-left: 0px;
+    margin-bottom: 10px;  
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+.Culture{
+    padding-top: 150px;
+    gap: 45px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 9rem;
+}
+.Culture-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.Culture-text h5{
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffa343;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+.Culture-text h2{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+.Culture-text p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 30px;
+    color: #221314;
+    margin-bottom: 35px;
+}
+
+.Culture2{
+    margin-bottom: 100px;
+    height: 75vh;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-color: rgb(244, 244, 244);
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 20px;
+}
+
+.Culture2-img img{
+    width: 100%;
+    border-radius: 10px;
+    width: 93%;
+    padding: 34px;
+}
+.Culture2-text h5{
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffa343;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+.Culture2-text h2{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+.Culture2-text p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 30px;
+    color: #221314;
+    margin-bottom: 35px;
+}
+
+.Culture2-text {
+    width: 41%;
+    padding: 25px;
+    padding-bottom: 0px;
+    background-color: white;
+    margin-bottom: 35px;
+    border-radius: 0 7px 7px 0;
+}
+
+.facilities-list {
+    margin: 20px;
+    padding: 0;
+}
+
+.facilities-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.facilities-list li {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: -4px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.facilities-list li::before {
+    content: '•';
+    color: #333; /* Bullet color */
+    font-size: 1.5em;
+    position: absolute;
+    left: -1em;
+    margin-bottom: 10px;
+}
+
+.swiper {
+width: 500px;
+height: 400px;
+padding: 50px;
+margin-bottom: 150px;
+}
+
+.swiper-slide {
+background-position: center;
+background-size: cover;
+width: 500px;
+height: 400px;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 52vh;
+}
+
+.mySwiper {
+    width: 70vh;
+}
+
+.form {
+    margin-top: 10px;
+}
+
+
+.book input {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 7px;
+    background-color: #bcbbbb;
+    opacity: 50%;
+}
+
+.book{
+    margin-top: 40px;
+    padding: 0;
+    color: black;
+    background: white;
+}
+
+.book h1 {
+    font-family: serif;
+    font-size: 28px;
+}
+
+.book h1 span {
+    color: #ffa343;
+}
+
+#submit{
+    margin-top: 30px;
+    background-color: #da722c;
+    color: #fff;
+    opacity: 1;
+    border-radius: 0 0 7px;
+    margin-left: -28px;
+    padding: 16px 32px;
+    width: 540px;
+    font-weight: bold;
+    font-size: 18px;
+
+
+
+}
+
+#adult, #children {
+    width: 90px;
+}
+
+
+
+
+
+@media ( width = 480px) {
+    .Facilities .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Facilities .Facilities-text {
+        margin-top: 10px;
+    }
+
+    .Culture2 {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        width: auto;
+        height: 160vh;
+    }
+
+    .Culture2-text {
+        width: 89%;
+        margin: -110px auto 10px;
+        padding: 25px;
+        padding-bottom: 0px;
+        background-color: white;
+        margin-bottom: 27px;
+        border-radius: 0 7px 7px 0;
+    }
+
+    #submit {
+        margin-left: -25px;
+        width: 392px;
+
+    }
+
+    .Culture2-img img{
+        height: 10vh;
+        width: 107%;
+        border-radius: 10px;
+        margin-left: -19px;
+    }
+    
+    .swiper {
+        width: 456px;
+    }
+
+    .swiper-slide img {
+        width: 95%;
+        margin-left: -4px;
+    }
+
+    .book input {
+        margin-top: 10px;
+        padding: 4px;
+    }
+
+}
+
+
+@media (width = 1024px){
+.Culture2 {
+    width: 90%;
+    height: 95vh;
+}
+
+#submit {
+    margin-left: -25px;
+    width: 362px;
+}
+
+.book input {
+    margin-top: 10px;
+    padding: 4px;
+}
+
+}
