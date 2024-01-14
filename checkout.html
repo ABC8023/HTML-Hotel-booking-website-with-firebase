@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bao Bao Hotel</title>
+    <!-- Site Icons -->
+    <link rel="plam tree icon" href="Images/palmtreeicon.png">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.css">
+    <!--fonts-->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--header-->
+    <header>
+        <a href="index.html" class="logo"><img src="Images/Palm-Tree-Clip-Art-1-1-removebg-preview.png" alt="logo"></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Suites</a>
+                <div class="dropdown-content">
+                    <a href="experience.html">Experience</a>
+                    <a href="room.html">Suites</a>
+                    <a href="offerings.html">Offers</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">About Us</a>
+                <div class="dropdown-content">
+                    <a href="reviews.html">Customer Reviews</a>
+                    <a href="about-us.html">About Us</a>
+                </div>
+            </li>
+            <li><a href="membership.html">Book Now</a></li>
+        </ul>
+    </header>
+    
+<div class="container">
+    <div class="checkoutLayout">
+
+        
+        <div class="returnCart">
+            
+            <h1>List Product in Cart</h1>
+            <div class="list" id="list">
+                <div class="item">
+                    <img src="images/1.webp">
+                    <div class="info">
+                        <div class="name">PRODUCT 1</div>
+                        <div class="price">$22/1 product</div>
+                    </div>
+                    <div class="quantity">5</div>
+                    <div class="returnPrice">$433.3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <h1>Checkout</h1>
+
+            <div class="form">
+
+                <div class="group">
+                <label for="name">Check-in Date</label>
+                <input id="arrival" type="date" placeholder="Arrival date" required>
+                </div>
+                <div class="group">
+                <label for="name">Check-out Date</label>
+                <input id="departure" type="date" placeholder="Departure date" required>
+                </div>
+            </div>
+            <div class="return">
+                <div class="row">
+                    <div>Total Quantity</div>
+                    <div class="totalQuantity">70</div>
+                </div>
+                <div class="row">
+                    <div>Total Price</div>
+                    <div class="totalPrice">$900</div>
+                </div>
+            </div>
+            <a href="payment.html"><button class="buttonCheckout">PROCEED TO PAYMENT</button></a>
+            <a href="cart.html"><button class="buttonCheckout">BACK</button></a>
+            </div>
+    </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js"></script>
+
+
+
+
+<!--footer-->
+<section id="contacts">
+    <div class="footer">
+        <div class="main">
+            <div class="list">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="room.html">Suites</a></li>
+                    <li><a href="offerings.html">Offers</a></li>
+                </ul>
+            </div>
+
+            <div class="list">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="https://maps.app.goo.gl/DUfrfTBWtG3cyfpG7" target="_blank">Our Location</a></li>
+                    <li><a href="reviews.html">Customer Reviews</a></li>
+                </ul>
+            </div>
+
+            <div class="list">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><a href="https://maps.app.goo.gl/DUfrfTBWtG3cyfpG7" target="_blank"><i class="fa-solid fa-location-dot">&nbsp</i>Malohom Bay, Tunku Abdul Rahman Marine Park, 88000 Kota Kinabalu, Sabah, Malaysia</a></li>
+                    <li><a href="tel:+60163875233"><i class="fa-solid fa-phone">&nbsp</i>+60163875233</a></li>
+                    <li><a href="mailto: chinbs-wp22@student.tarc.edu.my"><i class="fa-solid fa-envelope">&nbsp</i>chinbs-wp22@student.tarc.edu.my</a></li>
+                </ul>
+            </div>
+
+            <div class="list">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/"><i class='fab fa-facebook-f' ></i></a>
+                    <a href="https://www.instagram.com/accounts/login/"><i class='fab fa-instagram' ></i></a>
+                    <a href="https://www.youtube.com/account"><i class='fab fa-youtube' ></i></a>
+                    <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class='fab fa-twitter' ></i></a>
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div class="end-text">
+            <p>Copyright 2023 All right reserved | Made by CKMW</p>
+        </div>
+    </div>
+</section>
+<script>
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const arrivalDateInput = document.getElementById('arrival');
+    const departureDateInput = document.getElementById('departure');
+    const totalPriceHTML = document.querySelector('.totalPrice');
+    const checkoutButton = document.querySelector('.buttonCheckout');
+    const totalQuantityHTML = document.querySelector('.totalQuantity');
+
+    // Set default value for check-in date to today's date
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    let mm = today.getMonth() + 1;
+    let dd = today.getDate();
+
+    if (mm < 10) {
+        mm = '0' + mm;
+    }
+
+    if (dd < 10) {
+        dd = '0' + dd;
+    }
+
+    const defaultDate = yyyy + '-' + mm + '-' + dd;
+    arrivalDateInput.value = defaultDate;
+
+    arrivalDateInput.addEventListener('change', updateTotalPrice);
+    departureDateInput.addEventListener('change', updateTotalPrice);
+    checkoutButton.addEventListener('click', validateCheckout);
+
+    function updateTotalPrice() {
+        const arrivalDate = new Date(arrivalDateInput.value);
+        const departureDate = new Date(departureDateInput.value);
+
+        if (!isNaN(arrivalDate) && !isNaN(departureDate) && arrivalDate > departureDate) {
+            alert('Invalid date selection. Check-out date cannot be earlier than the Check-in date.');
+            // Reset the checkout date to be the same as the check-in date or any default value
+            //departureDateInput.value = arrivalDateInput.value; // Do not set the checkout date
+        } else {
+        const numberOfNights = Math.ceil((departureDate - arrivalDate + 1) / (1000 * 60 * 60 * 24));
+        const storedTotalPrice = parseFloat(localStorage.getItem('totalPrice')) || 0; // Parse to a number
+        const totalPrice = numberOfNights * storedTotalPrice;
+
+        totalPriceHTML.innerText = '$' + totalPrice.toFixed(2); // Ensure two decimal places
+
+        // Construct the URL with totalPrice as a parameter
+        const totalPriceParam = encodeURIComponent(totalPrice.toFixed(2));
+        const paymentURL = `${totalPriceParam}`;
+
+        // Do not redirect immediately, just store the URL in localStorage
+        localStorage.setItem('paymentURL', paymentURL);
+    }
+}
+
+    function validateCheckout(event) {
+        const arrivalDate = arrivalDateInput.value.trim();
+        const departureDate = departureDateInput.value.trim();
+    
+        if (arrivalDate === '' || departureDate === '') {
+                alert('Please fill in both check-in and check-out dates.');
+                event.preventDefault();
+
+        } else  {
+                const arrivalDateObj = new Date(arrivalDate);
+                const departureDateObj = new Date(departureDate);
+                const defaultDateObj = new Date(defaultDate);
+    
+                if (!isNaN(arrivalDateObj) && !isNaN(departureDateObj) && arrivalDateObj > departureDateObj) {
+                    alert('Invalid date selection. Check-out date cannot be earlier than the Check-in date.');
+                    event.preventDefault();
+                }else if (arrivalDateObj < defaultDateObj) {
+                alert('Invalid check-in date. Check-in date cannot be in the past.');
+                event.preventDefault();
+                } else {
+                            // Retrieve the stored payment URL from localStorage
+                const storedPaymentURL = localStorage.getItem('paymentURL');
+                }
+        }
+        // Redirect to the payment page with the stored URL
+        if (storedPaymentURL) {
+            window.location.href = storedPaymentURL;
+        }
+    }
+    
+});
+
+
+
+</script>
+<script src="js/checkout.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

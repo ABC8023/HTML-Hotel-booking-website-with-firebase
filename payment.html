@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <!-- Site Icons -->
+    <link rel="plam tree icon" href="Images/palmtreeicon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/payment.css" />
+
+    
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js"></script>
+</head>
+    <body>
+
+        <div class="container">
+            <div class="wrapper">
+                <div class="checkout-image">
+                    <div class="info">
+                        <h1>Payment</h1>
+                        <div class="row">
+                        <div class="totalPrice">$900</div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <p>
+                            <span>Powered by <b>Chin Bao Sheng</b></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="checkout-text">
+        
+                    <div class="back-to-home">
+                        <a href="cart.html">Back to Cart</a>
+                        <img src="Images/forward.png" alt="Arrow" height="15px" width="15px" />
+                        <a href="payment.html">Payment</a>
+                    </div>
+
+                    <div class="pay-button">
+                        <button>
+                            <a href="https://appleid.apple.com/">
+                            <img src="Images/mac-os.png" alt="Apple-Pay" height="20px" width="20px"/>
+                            <span>Pay</span>
+                             </a>
+                        </button>
+                    </div>
+
+                    <div class="or-line">
+                        <p>Or pay with card</p>
+                    </div>
+        
+                    <div class="card-details">
+                        <label>Card details</label>
+                        <div class="card-number">
+                            <input type="text" pattern="[0-9]*" inputmode="numeric" placeholder="xxxx xxxx xxxx xxxx" maxlength="19" oninput="formatCardNumber(this)" />
+                            <div>
+                                <img src="Images/visa.png" height="20px" width="20px" />
+                                <img src="Images/mastercard.png" height="20px" width="20px" />
+                                <img src="Images/amex.png" height="20px" width="20px" />
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <div class="mm-yy">
+                                <input type="text" placeholder="MM / YY" pattern="[0-9]*" inputmode="numeric" maxlength="4" oninput="formatCardInfo(this)"/>
+                            </div>
+                            <div class="cvc">
+                                <input type="text" placeholder="CVC" attern="[0-9]*" inputmode="numeric" maxlength="3" oninput="formatCVC(this)"/>
+                                <img src="Images/card-verification-value.png" height="20px" width="20px" p/>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="owner-name">
+                        <label>Owner name</label>
+                        <input type="text" placeholder="Kanye West" />
+                    </div>
+        
+                    <div class="country-region">
+                        <label>Country or region</label>
+                        <select>
+                            <option>Malaysia</option>
+                            <option>Singapore</option>
+                            <option>Thailand</option>
+                        </select>
+                        <input type="text" placeholder="Zip code" oninput="formatzip(this)" maxlength="5"/>
+                    </div>
+        
+                    <button class="buy-button">Pay Now</button>
+                    <div class="pay-button">
+                        <a href="cart.html"><button>Back to Cart</button></a>
+                    </div>
+                    <div class="pay-button">
+                        <a href="index.html"><button>Back to Home</button></a>
+                    </div>
+        
+                </div>
+            </div>
+
+            <section id="contacts">
+                <div class="footer">
+                    <div class="main">
+                        <div class="list">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="experience.html">Experience</a></li>
+                                <li><a href="room.html">Suites</a></li>
+                                <li><a href="offerings.html">Offers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="list">
+                            <h4>Support</h4>
+                            <ul>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="https://maps.app.goo.gl/DUfrfTBWtG3cyfpG7" target="_blank">Our Location</a></li>
+                                <li><a href="reviews.html">Customer Reviews</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="list">
+                            <h4>Contact Info</h4>
+                            <ul>
+                                <li><a href="https://maps.app.goo.gl/DUfrfTBWtG3cyfpG7" target="_blank"><i class="fa-solid fa-location-dot">&nbsp</i>Malohom Bay, Tunku Abdul Rahman Marine Park, 88000 Kota Kinabalu, Sabah, Malaysia</a></li>
+                                <li><a href="tel:+60163875233"><i class="fa-solid fa-phone">&nbsp</i>+60163875233</a></li>
+                                <li><a href="mailto: chinbs-wp22@student.tarc.edu.my"><i class="fa-solid fa-envelope">&nbsp</i>chinbs-wp22@student.tarc.edu.my</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="list">
+                            <h4>Connect</h4>
+                            <div class="social">
+                                <a href="https://www.facebook.com/"><i class='fab fa-facebook-f' ></i></a>
+                                <a href="https://www.instagram.com/accounts/login/"><i class='fab fa-instagram' ></i></a>
+                                <a href="https://www.youtube.com/account"><i class='fab fa-youtube' ></i></a>
+                                <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class='fab fa-twitter' ></i></a>
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                    <div class="end-text">
+                        <p>Copyright 2023 All right reserved | Made by CKMW</p>
+                    </div>
+                </div>
+            </section>
+            <script>
+
+                const storedPaymentURL = localStorage.getItem('paymentURL');
+
+
+            document.addEventListener('DOMContentLoaded', function () {
+                // Retrieve total price from URL parameter
+                const urlParams = new URLSearchParams(window.location.search);
+                const totalPrice = urlParams.get('totalPrice');
+
+                // Update the total price element in the payment page
+                const totalPriceElement = document.querySelector('.totalPrice');
+                if (totalPriceElement) {
+                    totalPriceElement.textContent = 'The total price is $' + storedPaymentURL || '$0'; // Default to $0 if totalPrice is not provided
+                }
+                });
+        
+                function formatCardNumber(input) {
+                    // Remove non-numeric characters
+                    const numericValue = input.value.replace(/\D/g, '');
+                
+                    // Format the numeric value with a space every 4 characters
+                    const formattedValue = numericValue.replace(/(\d{4})(\d{4})(\d{4})(\d{4})/, '$1-$2-$3-$4');
+                
+                    // Update the input value
+                    input.value = formattedValue;
+                }
+                function formatCardInfo(input) {
+                    // Remove non-numeric characters
+                    const numericValue = input.value.replace(/\D/g, '');
+                
+                    // Format the numeric value with a space every 4 characters
+                    const formattedValue = numericValue.replace(/(\d{2})(\d{2})/, '$1/$2');
+                
+                    // Update the input value
+                    input.value = formattedValue;
+                }
+                function formatCVC(input) {
+                // Remove non-numeric characters
+                const numericValue = input.value.replace(/\D/g, '');
+
+                // Update the input value
+                input.value = numericValue;
+                }
+                function formatzip(input) {
+                    // Remove non-numeric characters
+                    const numericValue = input.value.replace(/\D/g, '');
+
+                    // Update the input value
+                    input.value = numericValue;
+                }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add an event listener to the form submit button
+            const payButton = document.querySelector('.buy-button');
+            if (payButton) {
+                payButton.addEventListener('click', function (event) {
+                    // Prevent the default form submission
+                    event.preventDefault();
+
+                    // Perform form validation
+                    if (validateForm()) {
+                        // If validation is successful, show payment success message
+                        alert('Payment Successful!');
+                    } else {
+                        // If validation fails, show an error message
+                        alert('Please fill in all fields before proceeding.');
+                    }
+                });
+            }
+
+            // Function to validate form fields
+            function validateForm() {
+                const cardNumber = document.querySelector('.card-number input');
+                const cardInfo = document.querySelector('.card-info input');
+                const cvc = document.querySelector('.cvc input');
+                const ownerName = document.querySelector('.owner-name input');
+                const country = document.querySelector('.country-region select');
+                const zipCode = document.querySelector('.country-region input');
+
+                // Check if all fields are filled
+                if (
+                    cardNumber.value.trim() === '' ||
+                    cardInfo.value.trim() === '' ||
+                    cvc.value.trim() === '' ||
+                    ownerName.value.trim() === '' ||
+                    country.value === '' ||
+                    zipCode.value.trim() === ''
+                ) {
+                    return false; // Validation failed
+                }
+
+                // Additional validation logic can be added here
+
+                return true; // Validation successful
+            }
+        });
+    </script>
+
+            <script src="js/checkout.js"></script>
+    </body>
+
+</html>
